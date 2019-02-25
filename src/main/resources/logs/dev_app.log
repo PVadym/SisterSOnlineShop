@@ -1,0 +1,375 @@
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-2]  o.s.web.servlet.DispatcherServlet : OPTIONS "/rest/products", parameters={}
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-2]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<java.util.Collection<application.sisters.domain.product.Product>>> application.sisters.controller.ProductController.getAllProducts()
+2019-02-22 09:21:36 INFO  [http-nio-8081-exec-2]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-2]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.s.web.servlet.DispatcherServlet : GET "/rest/products", parameters={}
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<java.util.Collection<application.sisters.domain.product.Product>>> application.sisters.controller.ProductController.getAllProducts()
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.e.t.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.e.t.internal.TransactionImpl : begin
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.q.c.internal.CriteriaQueryImpl : Rendered criteria query -> select generatedAlias0 from Product as generatedAlias0
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  org.hibernate.SQL : 
+    select
+        product0_.id as id1_0_,
+        product0_.description as descript2_0_,
+        product0_.name as name3_0_,
+        product0_.picture as picture4_0_,
+        product0_.price as price5_0_,
+        product0_.size as size6_0_ 
+    from
+        product product0_
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  org.hibernate.loader.Loader : Result set row: 0
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  org.hibernate.loader.Loader : Result row: EntityKey[application.sisters.domain.product.Product#1]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  org.hibernate.loader.Loader : Result set row: 1
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  org.hibernate.loader.Loader : Result row: EntityKey[application.sisters.domain.product.Product#2]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  org.hibernate.loader.Loader : Result set row: 2
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  org.hibernate.loader.Loader : Result row: EntityKey[application.sisters.domain.product.Product#4]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  org.hibernate.loader.Loader : Result set row: 3
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  org.hibernate.loader.Loader : Result row: EntityKey[application.sisters.domain.product.Product#5]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#1]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#1]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#2]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#2]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#4]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#4]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#5]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#5]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.stat.internal.StatisticsImpl : HHH000117: HQL: select generatedAlias0 from Product as generatedAlias0, time: 9ms, rows: 4
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.h.e.t.internal.TransactionImpl : committing
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [application.sisters.rest.GeneralResponse@db89e4b]
+2019-02-22 09:21:36 INFO  [http-nio-8081-exec-5]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    13025226 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    94334 nanoseconds spent preparing 1 JDBC statements;
+    7391836 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    6346 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:21:36 DEBUG [http-nio-8081-exec-5]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:24:45 DEBUG [http-nio-8081-exec-6]  o.s.web.servlet.DispatcherServlet : GET "/rest/products", parameters={}
+2019-02-22 09:24:45 DEBUG [http-nio-8081-exec-6]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<java.util.Collection<application.sisters.domain.product.Product>>> application.sisters.controller.ProductController.getAllProducts()
+2019-02-22 09:24:45 DEBUG [http-nio-8081-exec-6]  o.h.e.t.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-02-22 09:24:45 DEBUG [http-nio-8081-exec-6]  o.h.e.t.internal.TransactionImpl : begin
+2019-02-22 09:24:45 DEBUG [http-nio-8081-exec-6]  o.h.q.c.internal.CriteriaQueryImpl : Rendered criteria query -> select generatedAlias0 from Product as generatedAlias0
+2019-02-22 09:24:45 DEBUG [http-nio-8081-exec-6]  org.hibernate.SQL : 
+    select
+        product0_.id as id1_0_,
+        product0_.description as descript2_0_,
+        product0_.name as name3_0_,
+        product0_.picture as picture4_0_,
+        product0_.price as price5_0_,
+        product0_.size as size6_0_ 
+    from
+        product product0_
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  org.hibernate.loader.Loader : Result set row: 0
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  org.hibernate.loader.Loader : Result row: EntityKey[application.sisters.domain.product.Product#1]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  org.hibernate.loader.Loader : Result set row: 1
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  org.hibernate.loader.Loader : Result row: EntityKey[application.sisters.domain.product.Product#2]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  org.hibernate.loader.Loader : Result set row: 2
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  org.hibernate.loader.Loader : Result row: EntityKey[application.sisters.domain.product.Product#4]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  org.hibernate.loader.Loader : Result set row: 3
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  org.hibernate.loader.Loader : Result row: EntityKey[application.sisters.domain.product.Product#5]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#1]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#1]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#2]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#2]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#4]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#4]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#5]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#5]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.stat.internal.StatisticsImpl : HHH000117: HQL: select generatedAlias0 from Product as generatedAlias0, time: 2ms, rows: 4
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.h.e.t.internal.TransactionImpl : committing
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [application.sisters.rest.GeneralResponse@6c0a2ef3]
+2019-02-22 09:24:46 INFO  [http-nio-8081-exec-6]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    659896 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    236242 nanoseconds spent preparing 1 JDBC statements;
+    395078 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    3720 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:24:46 DEBUG [http-nio-8081-exec-6]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-4]  o.s.web.servlet.DispatcherServlet : OPTIONS "/rest/products/2", parameters={}
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-4]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<application.sisters.domain.product.Product>> application.sisters.controller.ProductController.getProductById(java.lang.Long)
+2019-02-22 09:24:50 INFO  [http-nio-8081-exec-4]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-4]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.s.web.servlet.DispatcherServlet : GET "/rest/products/2", parameters={}
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<application.sisters.domain.product.Product>> application.sisters.controller.ProductController.getProductById(java.lang.Long)
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.h.e.t.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.h.e.t.internal.TransactionImpl : begin
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  org.hibernate.SQL : 
+    select
+        product0_.id as id1_0_0_,
+        product0_.description as descript2_0_0_,
+        product0_.name as name3_0_0_,
+        product0_.picture as picture4_0_0_,
+        product0_.price as price5_0_0_,
+        product0_.size as size6_0_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.h.l.p.e.p.i.ResultSetProcessorImpl : Starting ResultSet row #0
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.h.l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#2]
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#2]
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.h.r.j.i.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.h.l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : application.sisters.domain.product.Product#2
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.h.e.t.internal.TransactionImpl : committing
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [application.sisters.rest.GeneralResponse@72b4f16f]
+2019-02-22 09:24:50 INFO  [http-nio-8081-exec-7]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    292784 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    71765 nanoseconds spent preparing 1 JDBC statements;
+    1303833 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:24:50 DEBUG [http-nio-8081-exec-7]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.s.web.servlet.DispatcherServlet : GET "/rest/products/2", parameters={}
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<application.sisters.domain.product.Product>> application.sisters.controller.ProductController.getProductById(java.lang.Long)
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.h.e.t.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.h.e.t.internal.TransactionImpl : begin
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  org.hibernate.SQL : 
+    select
+        product0_.id as id1_0_0_,
+        product0_.description as descript2_0_0_,
+        product0_.name as name3_0_0_,
+        product0_.picture as picture4_0_0_,
+        product0_.price as price5_0_0_,
+        product0_.size as size6_0_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.h.l.p.e.p.i.ResultSetProcessorImpl : Starting ResultSet row #0
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.h.l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#2]
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#2]
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.h.r.j.i.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.h.l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : application.sisters.domain.product.Product#2
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.h.e.t.internal.TransactionImpl : committing
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [application.sisters.rest.GeneralResponse@ab7df57]
+2019-02-22 09:28:42 INFO  [http-nio-8081-exec-9]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    451900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    28940 nanoseconds spent preparing 1 JDBC statements;
+    422473 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:28:42 DEBUG [http-nio-8081-exec-9]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.s.web.servlet.DispatcherServlet : GET "/rest/products/2", parameters={}
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<application.sisters.domain.product.Product>> application.sisters.controller.ProductController.getProductById(java.lang.Long)
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.h.e.t.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.h.e.t.internal.TransactionImpl : begin
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  org.hibernate.SQL : 
+    select
+        product0_.id as id1_0_0_,
+        product0_.description as descript2_0_0_,
+        product0_.name as name3_0_0_,
+        product0_.picture as picture4_0_0_,
+        product0_.price as price5_0_0_,
+        product0_.size as size6_0_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.h.l.p.e.p.i.ResultSetProcessorImpl : Starting ResultSet row #0
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.h.l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#2]
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#2]
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.h.r.j.i.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.h.l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : application.sisters.domain.product.Product#2
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.h.e.t.internal.TransactionImpl : committing
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [application.sisters.rest.GeneralResponse@2a2d1f0d]
+2019-02-22 09:29:02 INFO  [http-nio-8081-exec-10]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    345644 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    35347 nanoseconds spent preparing 1 JDBC statements;
+    470500 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:29:02 DEBUG [http-nio-8081-exec-10]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.s.web.servlet.DispatcherServlet : GET "/rest/products/2", parameters={}
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<application.sisters.domain.product.Product>> application.sisters.controller.ProductController.getProductById(java.lang.Long)
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.h.e.t.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.h.e.t.internal.TransactionImpl : begin
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  org.hibernate.SQL : 
+    select
+        product0_.id as id1_0_0_,
+        product0_.description as descript2_0_0_,
+        product0_.name as name3_0_0_,
+        product0_.picture as picture4_0_0_,
+        product0_.price as price5_0_0_,
+        product0_.size as size6_0_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.h.l.p.e.p.i.ResultSetProcessorImpl : Starting ResultSet row #0
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.h.l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#2]
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#2]
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.h.r.j.i.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.h.l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : application.sisters.domain.product.Product#2
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.h.e.t.internal.TransactionImpl : committing
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [application.sisters.rest.GeneralResponse@50ec542e]
+2019-02-22 09:29:10 INFO  [http-nio-8081-exec-1]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1153025 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    33122 nanoseconds spent preparing 1 JDBC statements;
+    458734 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:29:10 DEBUG [http-nio-8081-exec-1]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.s.web.servlet.DispatcherServlet : GET "/rest/products/2", parameters={}
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<application.sisters.domain.product.Product>> application.sisters.controller.ProductController.getProductById(java.lang.Long)
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.h.e.t.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.h.e.t.internal.TransactionImpl : begin
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  org.hibernate.SQL : 
+    select
+        product0_.id as id1_0_0_,
+        product0_.description as descript2_0_0_,
+        product0_.name as name3_0_0_,
+        product0_.picture as picture4_0_0_,
+        product0_.price as price5_0_0_,
+        product0_.size as size6_0_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.h.l.p.e.p.i.ResultSetProcessorImpl : Starting ResultSet row #0
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.h.l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#2]
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#2]
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.h.r.j.i.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.h.l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : application.sisters.domain.product.Product#2
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.h.e.t.internal.TransactionImpl : committing
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [application.sisters.rest.GeneralResponse@5e661a13]
+2019-02-22 09:29:36 INFO  [http-nio-8081-exec-2]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1415130 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    61097 nanoseconds spent preparing 1 JDBC statements;
+    2794520 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:29:36 DEBUG [http-nio-8081-exec-2]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.s.web.servlet.DispatcherServlet : GET "/rest/products/2", parameters={}
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<application.sisters.rest.GeneralResponse<application.sisters.domain.product.Product>> application.sisters.controller.ProductController.getProductById(java.lang.Long)
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.h.e.t.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.h.e.t.internal.TransactionImpl : begin
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  org.hibernate.SQL : 
+    select
+        product0_.id as id1_0_0_,
+        product0_.description as descript2_0_0_,
+        product0_.name as name3_0_0_,
+        product0_.picture as picture4_0_0_,
+        product0_.price as price5_0_0_,
+        product0_.size as size6_0_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.h.l.p.e.p.i.ResultSetProcessorImpl : Starting ResultSet row #0
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.h.l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Resolving associations for [application.sisters.domain.product.Product#2]
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.h.engine.internal.TwoPhaseLoad : Done materializing entity [application.sisters.domain.product.Product#2]
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.h.r.j.i.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.h.l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : application.sisters.domain.product.Product#2
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.h.e.t.internal.TransactionImpl : committing
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [application.sisters.rest.GeneralResponse@35a0a3cd]
+2019-02-22 09:30:14 INFO  [http-nio-8081-exec-5]  o.h.e.i.StatisticalLoggingSessionEventListener : Session Metrics {
+    2896997 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    70406 nanoseconds spent preparing 1 JDBC statements;
+    999052 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2019-02-22 09:30:14 DEBUG [http-nio-8081-exec-5]  o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2019-02-22 09:56:15 INFO  [Thread-33]  o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 09:56:15 INFO  [Thread-33]  o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 09:56:15 DEBUG [Thread-33]  o.h.internal.SessionFactoryImpl : HHH000031: Closing
+2019-02-22 09:56:15 INFO  [Thread-33]  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 09:56:15 DEBUG [Thread-33]  org.hibernate.SQL : 
+    
+    drop table if exists product cascade
+2019-02-22 09:56:15 DEBUG [Thread-33]  org.hibernate.SQL : 
+    
+    drop table if exists users cascade
+2019-02-22 09:56:15 DEBUG [Thread-33]  org.hibernate.SQL : 
+    
+    drop sequence if exists product_id_seq
+2019-02-22 09:56:15 DEBUG [Thread-33]  org.hibernate.SQL : 
+    
+    drop sequence if exists user_id_seq
+2019-02-22 09:56:15 DEBUG [Thread-33]  o.h.type.spi.TypeConfiguration$Scope : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@6d337580] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@5fcbba69]
+2019-02-22 09:56:15 DEBUG [Thread-33]  o.h.s.i.AbstractServiceRegistryImpl : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2019-02-22 09:56:15 DEBUG [Thread-33]  o.h.b.r.i.BootstrapServiceRegistryImpl : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2019-02-22 09:56:15 INFO  [Thread-33]  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2019-02-22 09:56:15 INFO  [Thread-33]  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.

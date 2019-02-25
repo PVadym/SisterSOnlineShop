@@ -1,6 +1,7 @@
 package application.sisters.domain;
 
 import lombok.Data;
+import lombok.Getter;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,6 +12,6 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public abstract class BasicEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "default_gen")
     private Long id;
 }

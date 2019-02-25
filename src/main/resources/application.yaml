@@ -15,9 +15,6 @@ server:
 
 spring:
   profiles: dev
-  output:
-    ansi:
-      enabled: ALWAYS
 # Datasource configuration
   datasource:
     url: jdbc:postgresql://localhost:5432/sisters
@@ -25,14 +22,15 @@ spring:
     username: pylypchenko
   jpa:
     generate-ddl: true
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate.format_sql: true
       hibernate.generate_statistics: true
-      hibernate.temp.use_jdbc_metadata_defaults: false
-    show-sql: true
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+      hibernate.jdbc.lob.non_contextual_creation: true
     hibernate:
       ddl-auto: create-drop
+
 
 #Loggin configurations
 logging:
@@ -48,7 +46,7 @@ logging:
 
 # Other properties
 allowedOrigins: 'http://localhost:4200'
-
+upload.path: /home/pylypchenko/IdeaProjects/sisters-app/sisters/files
 
 
 
