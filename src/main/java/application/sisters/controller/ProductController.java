@@ -39,7 +39,7 @@ public class ProductController {
     public ResponseEntity<GeneralResponse<Collection<Product>>> getAllProducts() {
         Collection<Product> allProducts = productService.getAll();
 
-        return new ResponseEntity<>(body(allProducts), HttpStatus.OK);
+        return new ResponseEntity<>(body(allProducts), HttpStatus.BAD_REQUEST);
     }
 
     @GetMapping("{id}")
