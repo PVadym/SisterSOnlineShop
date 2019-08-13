@@ -21,7 +21,6 @@ import java.util.UUID;
 
 import static application.sisters.rest.GeneralResponse.body;
 
-
 @CrossOrigin
 @RestController
 @Slf4j
@@ -31,7 +30,7 @@ public class ProductController {
     @Autowired
     private ProductServiceImpl productService;
 
-    @Value("${upload.path}")
+    @Value("${images.upload-path}")
     private String uploadPath;
 
 
@@ -100,3 +99,4 @@ public class ProductController {
 
 
 }
+

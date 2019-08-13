@@ -1,17 +1,19 @@
 package application.sisters.domain.product;
 
-import application.sisters.domain.BasicEntity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Data
 @NoArgsConstructor
 @Entity
-@SequenceGenerator(name = "default_gen", sequenceName = "product_id_seq", allocationSize = 1)
-public class Product extends BasicEntity {
+public class Product {
+
+    @Id
+    @SequenceGenerator(name = "PRODUCTS_ID_GENERATOR", sequenceName = "PRODUCTS_ID_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PRODUCTS_ID_GENERATOR")
+    private Long id;
 
     private String name;
 

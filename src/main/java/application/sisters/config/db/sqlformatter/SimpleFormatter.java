@@ -1,4 +1,4 @@
-package application.sisters.config.sqlformatter;
+package application.sisters.config.db.sqlformatter;
 
 import com.p6spy.engine.spy.appender.MessageFormattingStrategy;
 import org.hibernate.engine.jdbc.internal.BasicFormatterImpl;

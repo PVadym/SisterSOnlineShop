@@ -1,17 +1,35 @@
 package application.sisters.domain;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
 @Entity
 @Table(name = "users")
-@SequenceGenerator(name = "default_gen", sequenceName = "user_id_seq", allocationSize = 1)
-public class User extends BasicEntity{
-    String name;
+@EqualsAndHashCode
+public class User {
+
+    @Id
+    @SequenceGenerator(name = "USERS_ID_GENERATOR", sequenceName = "USERS_ID_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "USERS_ID_GENERATOR")
+    private Long id;
+
+    private String email;
+
+    private String password;
+
+    private String name;
+
+    private boolean enabled;
+
+    @ElementCollection(fetch = FetchType.EAGER)
+    @Enumerated(EnumType.STRING)
+    private Set<Role> roles = new HashSet<>();
+
 }

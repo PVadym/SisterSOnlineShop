@@ -21,8 +21,8 @@ spring:
 
 
 # Other properties
-allowedOrigins: 'http://localhost:4200'
-upload.path: /home/pylypchenko/IdeaProjects/sisters-app/sisters/files
+web.allowed-origins: 'http://localhost:4200'
+images.upload-path: '/home/pylypchenko/IdeaProjects/sisters-app/sisters/files'
 
 
 # Actuator
@@ -31,6 +31,17 @@ management:
     web:
       exposure:
         include: '*'
+
+# Security
+
+security.jwt.token.secret-key: 'sisters-secret'
+security.jwt.token.expire-length: 3600000
+
+
+server:
+  servlet:
+    context-path: '/api'
+
 
 
 ---
@@ -73,7 +84,7 @@ logging:
   level:
     application.sisters: DEBUG
     org.springframework.web: DEBUG
-    guru.springframework.controllers: DEBUG
+    org.springframework.controllers: DEBUG
 
     # logging hibernate
     org.hibernate: INFO
@@ -84,8 +95,6 @@ logging:
     org.hibernate.hql: DEBUG
     org.hibernate.cache: INFO
     org.hibernate.jdbc: DEBUG
-
-
 
 
 
